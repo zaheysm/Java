@@ -1,0 +1,40 @@
+
+public class Employee {
+	
+	private int rank;
+	private String firstName;
+	private String lastName;
+	
+	
+	public Employee(int rank,String firstName,String lastName) {
+		
+		this.rank=rank;
+		this.firstName=firstName;
+		this.lastName=lastName;
+	}
+	
+	
+	public int getRank() {
+		return rank;
+	}
+
+
+	public String getName() {
+		return firstName+" "+lastName;
+	}
+	
+	
+    /**
+     * method to sort the array
+     * @param comparestu object that will rescive the array
+     * @return by which item you want to return
+     */
+    @Override
+    public int compareTo(Object comparestu) {
+        int compareage=((Employee)comparestu).getRank();        //sort the item by item code
+        return this.rank-compareage;        // return Ascending order
+    }
+
+	
+
+}

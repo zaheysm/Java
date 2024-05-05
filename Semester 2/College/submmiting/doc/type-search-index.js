@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"<Unnamed>","l":"College"},{"p":"<Unnamed>","l":"CollegeSystemTest"},{"p":"<Unnamed>","l":"FulltimeStudent"},{"p":"<Unnamed>","l":"Inputs"},{"p":"<Unnamed>","l":"ParttimeStudent"},{"p":"<Unnamed>","l":"Person"},{"p":"<Unnamed>","l":"Policies"},{"p":"<Unnamed>","l":"Student"}]

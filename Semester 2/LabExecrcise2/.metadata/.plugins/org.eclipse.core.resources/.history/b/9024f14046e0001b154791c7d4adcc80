@@ -1,0 +1,121 @@
+/*
+	 * Assessment:Lab 3
+	 * Student Name:Chayma Tsouli
+	 * Due Date: 06/20/21
+	 * Professor Name:Dr. James Mwangi
+	*/
+/**
+ * Represents a Person.
+ *
+ * @author Chayma Tsouli
+ * @version 1.0
+ * @since 1.0
+ */
+public abstract class Person { // abstract class 
+
+    /**
+     * Represents the person’s first name.
+     */
+    private String firstName;  // instance variable 
+    /**
+     * Represents the person’s last name.
+     */
+    private String lastName;
+    /**
+     * Represents the person’s email id.
+     */
+    private String emailId;
+    /**
+     * Represents the person’s phone number.
+     */
+    private long phoneNumber;
+
+    /**
+     * Reade a person information.
+     */
+    public abstract void readInfo(); // method to read info 
+
+    /**
+     * Print a person information.
+     */
+    public abstract void printInfo(); // method to print info 
+
+    /**
+     * Gets the person's first name.
+     *
+     * @return A String representing the person's first name.
+     */
+    public String getFirstName() { // accessor 
+        return firstName;
+    }
+
+    /**
+     * Sets the the person's first name.
+     *
+     * @param firstName A String containing the person’s first name.
+     */
+    public void setFirstName(String firstName) { // mututor 
+        this.firstName = firstName;
+    }
+
+    /**
+     * Gets the person's last name.
+     *
+     * @return A String representing the person's last name.
+     */
+    public String getLastName() { // accessor 
+        return lastName;
+    }
+
+    /**
+     * Sets the person's last name.
+     *
+     * @param lastName A String containing the person’s last name.
+     */
+    public void setLastName(String lastName) { // mututor 
+        this.lastName = lastName;
+    }
+
+    /**
+     * Gets the person's email id.
+   // lab3
+   //Student Name: CHAYMA CHADLIA TSOULI 
+   // Professor Name:Dr. James Mwangi 
+  // Due Date: June 20th, 2021 
+    	  
+    
+ 
+     * @return A String representing the person's email id.
+     */
+    public String getEmailId() { 
+        return emailId;
+    }
+
+    /**
+     * Sets the person's email id.
+     *
+     * @param emailId A String containing the person's email id.
+     */
+    public void setEmailId(String emailId) { // mututor 
+        this.emailId = emailId;
+    }
+
+    /**
+     * Gets the person's phone number.
+     *
+     * @return A long representing the person's phone number.
+     */
+    public long getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    /**
+     * Sets the person's phone number.
+     *
+     * @param phoneNumber A long containing the person's phone number.
+     */
+    public void setPhoneNumber(long phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+}

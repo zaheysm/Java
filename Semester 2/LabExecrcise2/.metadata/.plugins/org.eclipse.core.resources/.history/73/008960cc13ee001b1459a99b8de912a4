@@ -1,0 +1,37 @@
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.net.Socket;
+
+public class Clinet {
+
+	public static void main(String[] args) {
+		
+		DataInputStream input=null;
+		DataOutputStream output=null;
+		Socket clinet=null;
+		try {
+			clinet=new Socket("server",1254);
+			output= new DataOutputStream(clinet.getOutputStream());
+			input= new DataInputStream(clinet.getInputStream());
+		}catch(IOException e) {
+			System.out.println(e);
+		}
+		try {
+		output.writeUTF("Hello Server");
+		}catch(IOException e) {
+			System.out.println("IOException "+e);
+		}
+		
+		try {
+			output.close();
+			input.close();
+			clinet.close();
+		}catch(IOException io) {
+			System.out.println(io);
+		}
+		
+
+	}
+
+}

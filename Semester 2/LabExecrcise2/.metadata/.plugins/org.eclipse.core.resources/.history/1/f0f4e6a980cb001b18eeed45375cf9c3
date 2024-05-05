@@ -1,0 +1,53 @@
+
+public class Student extends Person implements Policies {
+
+	private int studentNumber;
+	private String programName;
+	private double gpa;
+
+	
+	@Override
+	public void readInfo() {
+		System.out.print("Enter program name: ");
+		programName=Inputs.inputText();
+		System.out.print("Enter student number: ");
+		studentNumber=Inputs.inputInteger();
+		System.out.print("Enter first name: ");
+		firstName=Inputs.inputText();
+		System.out.print("Enter last name: ");
+		lastName=Inputs.inputText();
+		//super.setFullName(firstName, lastName);
+		System.out.print("Enter email Id: ");
+		super.setEmailId(Inputs.inputText());
+		System.out.print("Enter phone number: ");
+		super.setPhoneNumber(Inputs.inputLong());
+		readMarks();
+	}
+	
+	public void readMarks() {
+		System.out.print("Enter number of courses: ");
+		int coursNum=Inputs.inputInteger();
+		double [] marks=new double[coursNum];
+		for (int i=0;i<marks.length;i++) {
+			System.out.print("Enter mark "+(i+1)+": ");
+			marks[i]=Inputs.inputDouble();
+		}
+		calculateGpa(marks);
+	}
+	
+	@Override
+	public void calculateGpa(double[] marks) {
+		double sum=0;
+		for (int i = 0; i < marks.length; i++) {
+			sum+=marks[i];
+		}
+		gpa=(sum/(double)(marks.length*maxMarks))*maxGpa;
+	}	
+
+	
+	@Override
+	public void printInfo() {
+		System.out.printf("%10s|\t%10d|\t%15s|%25s|\t%13d|\t%5.2f|",programName,studentNumber,super.getFullName(),super.getEmailId(),super.getPhoneNumber(),gpa);
+	}
+
+}

@@ -1,0 +1,37 @@
+
+//abstract class that hold the fields information of a person 
+public abstract class Person {
+	
+	public String firstName;
+	public String lastName;
+	private String emailId;
+	private long phoneNumber;
+	
+	abstract void readInfo();
+	abstract void printInfo();
+	
+	
+	
+	public String getFullName() {
+		return firstName+" "+lastName;
+	}
+	public void setFullName(String firstName,String lastName) {
+		this.firstName = firstName;
+		this.lastName=lastName;
+	}
+	
+	public String getEmailId() {
+		return emailId;
+	}
+	public void setEmailId(String emailId) {
+		this.emailId = emailId;
+	}
+	
+	public long getPhoneNumber() {
+		return phoneNumber;
+	}
+	public void setPhoneNumber(long phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+	
+}

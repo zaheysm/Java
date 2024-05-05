@@ -1,0 +1,23 @@
+
+public class Employee {
+	
+	private int employeeNumber;
+	private Person emp=new Person();
+	
+	public Employee(int employeeNumber,String firstName,String lastName,String email,long phoneNumber) {
+		this.employeeNumber=employeeNumber;
+		this.emp.setFullName(firstName, firstName);
+		this.emp.setEmail(email);
+		this.emp.setPhoneNumber(phoneNumber);
+	}
+	
+	public void readEmployee() {
+		
+	}
+	
+	public void printEmployee() {
+		
+		System.out.printf("employee Number: %d,Name: %s,Email :%s,Phone Numebr :%d",employeeNumber,emp.getFullName(),emp.getEmail(),emp.getPhoneNumber());
+	}
+
+}

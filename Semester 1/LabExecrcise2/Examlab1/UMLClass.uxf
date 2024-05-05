@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>270</x>
+      <y>80</y>
+      <w>510</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>KitchenClass
+--
+-manufacturer :string
+-material :string
+-capacity :double
+--
++KitchenClass()
++KitchenClass(manufacturer :string,material :string,capacity :double)
+--
++getmanufacturer() :String
++getmaterial() :string
++getcapacity() :double
+--
++setKitchensupply(manufacturer :string,material :string,capacity :double):void
+--
+printkithcen() : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

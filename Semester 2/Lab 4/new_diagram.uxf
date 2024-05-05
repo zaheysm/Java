@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>720</x>
+      <y>315</y>
+      <w>234</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>Bank
+--
+-name: String
+-accounts: ArrayList&lt;Account&gt;
+-counter = 0: int
+--
++Bank(int size, String bankName): ctor
++readAccounts(Scanner scan): void
++runMonthlyProcess(): void
++displayAccounts(): void
++printStar(): void
++printTitle(): void
++checkInteger(Scanner scan): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>387</x>
+      <y>81</y>
+      <w>252</w>
+      <h>153</h>
+    </coordinates>
+    <panel_attributes>/Account/
+--
+-accNumber: long
+-accHolder = new Person(): Person
+#balance: double
+--
++readAccountDetails(Scanner scan): void
++displayAccount(): void
++updateBalance(): void
++checkLong(Scanner scan): void
++checkDouble(Scanner scan): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>54</x>
+      <y>81</y>
+      <w>252</w>
+      <h>171</h>
+    </coordinates>
+    <panel_attributes>Person
+--
+-firstName: String
+-lastName: String
+-email: String
+-phoneNumber: long
+--
++getFullName(): String
++getEmail(): String
++getPhoneNumber(): long
++readPersonalDetails(Scanner scan): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>396</x>
+      <y>342</y>
+      <w>144</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>Checking
+--
+-fees: double
+--
++Checking(): ctor
++updateBalance(): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>549</x>
+      <y>342</y>
+      <w>144</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>Savings
+--
+-interestRate: double
+--
++Savings(): ctor
++updateBalance(): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>135</x>
+      <y>468</y>
+      <w>162</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>BankTest
+--
++main(String[] args): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>594</x>
+      <y>225</y>
+      <w>27</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>225</y>
+      <w>27</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>297</x>
+      <y>198</y>
+      <w>108</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>207</y>
+      <w>216</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>220.0;120.0;220.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>225</x>
+      <y>522</y>
+      <w>558</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>600.0;10.0;600.0;60.0;10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>432</y>
+      <w>288</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0;300.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>594</x>
+      <y>432</y>
+      <w>144</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0;140.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>63</x>
+      <y>351</y>
+      <w>252</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>TestInput
+--
++testDouble(Scanner scan): void
++testInt(Scanner scan): void
++testLong(Scanner scan): void
++testEmptyString(Scanner scan):String
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>189</x>
+      <y>432</y>
+      <w>27</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>216</x>
+      <y>243</y>
+      <w>27</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>297</x>
+      <y>432</y>
+      <w>441</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0;470.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>279</x>
+      <y>225</y>
+      <w>135</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;140.0;10.0;80.0;130.0;80.0;130.0;10.0</additional_attributes>
+  </element>
+</diagram>

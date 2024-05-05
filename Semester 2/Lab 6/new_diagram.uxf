@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <help_text/>
+  <zoom_level>4</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>120</x>
+      <y>56</y>
+      <w>140</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>Library
+--
+-libaryName: String
+-user = new ArrayList(): ArrayList&lt;User&gt;
+-books = new ArrayList(): ArrayList&lt;Book&gt;
+-book: Book
+--
++Library(String libaryName): ctor
++readBookDetail(Scanner scan): void
++readUserDetail(Scanner scan): void
++readUserFromFile(Scanner scan): void
++readBookFromFile(Scanner scan): void
++selectUser(Scanner scan, int optionToDO): void
+-whatToDo(User user, Scanner scan, int option): void
++printUserBookList(User user): void
++returnBook(User user, Scanner scan): void
++borrowBook(User user, Scanner scan): void
+-PrintStars(): void
++printTitle(): void
++printBookTitles(): void
++printMemberTitle(): void
++printStaffTitle(): void
++printMemberInfo(): void
++printStaffInfo(): void
++printBookInfo(): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>484</x>
+      <y>64</y>
+      <w>108</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>/Book/
+--
+-id: long
+-bookName: String
+-isbn: long
+-authorName: String
+-dateOfPublish: String
+--
++readBook(Scanner scan): void
++readBookFromFile(Scanner scan): void
++printinfo(): void
++getId(): long
++getBookName(): String
++getIsbn(): long
++getAuthorName(): String
++getDateOfPublish(): String
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>304</x>
+      <y>328</y>
+      <w>156</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>Member
+--
+-age: double
+-booklist = new ArrayList(): ArrayList&lt;T&gt;
+-dateborrowed: String
+-fined: double
+--
++readInfo(Scanner scan): void
++readinfofile(Scanner scan): void
++borrowbook(ArrayList&lt;T&gt; fullBooklist, Scanner scan): void
++returnBook(Scanner scan): void
++printinfo(): void
++printBookList(): void
++calclateduedate(Date today): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>180</x>
+      <y>332</y>
+      <w>88</w>
+      <h>92</h>
+    </coordinates>
+    <panel_attributes>/Person/
+--
+-firstName: String
+-lastName: String
+-email: String
+-phoneNumber: long
+--
++readInfo(Scanner scan): void
++readinfofile(Scanner scan): void
++printinfo(): void
++getFullName(): String
++getEmail(): String
++getPhoneNumber(): long
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>436</x>
+      <y>444</y>
+      <w>92</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+Policies
+--
+~daysToReturn = 14: int
+~fine = 1: double
+~bookallowed = 5: int
+--
+~calclateduedate(Date date): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>444</y>
+      <w>88</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>Staff
+--
+-floor: String
+-section: String
+--
++readInfo(Scanner scan): void
++readinfofile(Scanner scan): void
++printinfo(): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>632</x>
+      <y>248</y>
+      <w>108</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>Biography
+--
+-biographyTypes: String
+--
++readBook(Scanner scan): void
++readBookFromFile(Scanner scan): void
++printinfo(): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>280</x>
+      <y>248</y>
+      <w>108</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>Comic
+--
+-comicWorld: String
+--
++readBook(Scanner scan): void
++readBookFromFile(Scanner scan): void
++printinfo(): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>396</x>
+      <y>248</y>
+      <w>108</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>Fantasy
+--
+-theme: String
+--
++readBook(Scanner scan): void
++readBookFromFile(Scanner scan): void
++printinfo(): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>184</y>
+      <w>108</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>Fiction
+--
+-genre: String
+--
++readBook(Scanner scan): void
++readBookFromFile(Scanner scan): void
++printinfo(): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>620</x>
+      <y>172</y>
+      <w>108</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>NonFiction
+--
+-nonFictiongenre: String
+--
++readBook(Scanner scan): void
++readBookFromFile(Scanner scan): void
++printinfo(): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>516</x>
+      <y>248</y>
+      <w>108</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>Science
+--
+-typeOfSience: String
+--
++readBook(Scanner scan): void
++readBookFromFile(Scanner scan): void
++printinfo(): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>508</x>
+      <y>328</y>
+      <w>104</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>TestInputs
+--
++testEmptyString(Scanner scan): String
++testDouble(Scanner scan): double
++inputInteger(Scanner scan): int
++testLong(Scanner scan): long
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>228</x>
+      <y>444</y>
+      <w>88</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>User
+--
+-id: long
+--
++readInfo(Scanner scan): void
++readinfofile(Scanner scan): void
++printinfo(): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>712</x>
+      <y>88</y>
+      <w>72</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>LibraryManagement
+--
++main(String[] args): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>748</x>
+      <y>248</y>
+      <w>108</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>History
+--
+-HistoryType: String
+--
++readBook(Scanner scan): void
++readBookFromFile(Scanner scan): void
++printinfo(): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>452</x>
+      <y>420</y>
+      <w>12</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>308</x>
+      <y>420</y>
+      <w>12</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>312</x>
+      <y>464</y>
+      <w>36</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>264</x>
+      <y>388</y>
+      <w>48</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;100.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>588</x>
+      <y>136</y>
+      <w>84</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;10.0;190.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>416</x>
+      <y>136</y>
+      <w>76</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>170.0;10.0;10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>452</x>
+      <y>228</y>
+      <w>12</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>376</x>
+      <y>228</y>
+      <w>12</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>604</x>
+      <y>216</y>
+      <w>52</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;40.0;110.0;40.0;110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>664</x>
+      <y>216</y>
+      <w>12</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>712</x>
+      <y>216</y>
+      <w>84</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>190.0;80.0;190.0;50.0;10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>256</x>
+      <y>88</y>
+      <w>236</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;570.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>148</x>
+      <y>212</y>
+      <w>88</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>20.0;10.0;10.0;630.0;200.0;630.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>256</x>
+      <y>56</y>
+      <w>484</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>1190.0;80.0;1190.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>588</x>
+      <y>120</y>
+      <w>132</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>310.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>608</x>
+      <y>140</y>
+      <w>272</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;520.0;660.0;520.0;660.0;10.0;280.0;10.0;280.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>608</x>
+      <y>140</y>
+      <w>272</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;520.0;660.0;520.0;660.0;10.0;510.0;10.0;510.0;270.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>572</x>
+      <y>292</y>
+      <w>12</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>268</x>
+      <y>208</y>
+      <w>248</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>600.0;370.0;540.0;370.0;540.0;250.0;10.0;250.0;10.0;10.0;230.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>344</x>
+      <y>292</y>
+      <w>172</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>410.0;160.0;350.0;160.0;350.0;40.0;10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>296</y>
+      <w>36</w>
+      <h>68</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>70.0;150.0;10.0;150.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>456</x>
+      <y>372</y>
+      <w>104</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>240.0;10.0;240.0;100.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>212</x>
+      <y>312</y>
+      <w>348</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>850.0;160.0;850.0;200.0;650.0;200.0;650.0;10.0;10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>268</x>
+      <y>372</y>
+      <w>292</w>
+      <h>172</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>710.0;10.0;710.0;410.0;10.0;410.0;10.0;300.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>384</x>
+      <y>372</y>
+      <w>176</w>
+      <h>172</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>420.0;10.0;420.0;410.0;10.0;410.0;10.0;310.0</additional_attributes>
+  </element>
+</diagram>

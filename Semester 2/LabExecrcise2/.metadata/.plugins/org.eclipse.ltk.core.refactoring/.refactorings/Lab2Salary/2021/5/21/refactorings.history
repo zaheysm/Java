@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;UserInput&apos; to &apos;Inputs&apos;&#x0D;&#x0A;- Original project: &apos;Lab2Salary&apos;&#x0D;&#x0A;- Original element: &apos;UserInput&apos;&#x0D;&#x0A;- Renamed element: &apos;Inputs&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;UserInput&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{UserInput.java[UserInput" matchStrategy="1" name="Inputs" qualified="false" references="true" similarDeclarations="false" stamp="1621724114750" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,52 @@
+	<div id="player">
+					<a id="play-btn">
+						<img class="lazyload" src="//hfweb-assets.s3.amazonaws.com/v2/images/ytube_play_button.svg"
+							alt="youtube play button">
+					</a>
+				</div>
+    <script>
+
+	$("#player").on("click", function () {
+		$("#player").html("<iframe src=\"https://www.youtube.com/embed/cD0FfdHdNis?rel=0&showinfo=0&autoplay=1\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen title=\"HappyFox Help Desk Demo\"></iframe>");
+		return;
+	});
+	</script>
+	<style>
+    	 @media (max-width: 1200px)
+        #player {
+        width: 700px;
+        height: 394px;
+        
+    }
+    .lazyloaded {
+        opacity: 1;
+        transition: all 750ms ease-in;
+        
+    }
+    
+element.style {
+}
+.home-banner img {
+    margin: auto;
+    display: table;
+}
+.lazyloaded {
+    opacity: 1;
+    transition: all 750ms ease-in;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+#player {
+    background: url(../images/youtube_thumb_home.jpg) no-repeat;
+    background-size: 100%;
+    width: 900px;
+    height: 506px;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 0 0 20px 0 rgb(76 76 76 / 30%);
+    cursor: pointer;
+}
+	</style>

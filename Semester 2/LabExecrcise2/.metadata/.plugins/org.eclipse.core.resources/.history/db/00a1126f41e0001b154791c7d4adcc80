@@ -1,0 +1,62 @@
+/*Assessment: Lab2
+ * Student Name: CHAYMA CHADLIA TSOULI 
+ * Professor Name:Dr. James Mwangi 
+ * Due Date: June 6th, 2021
+ * description:create  person class indentifing  the person  by afirstNam,lastName, email , phoneNumber
+ */
+
+
+//create class person with first name ,last name,email and phone number as attributes 
+
+public class Person { 
+
+	//Instance variables declaring first name ,last name,email and phone number 
+	private String firstName;
+	private String lastName;
+	private String email;
+	private long phoneNumber;
+	
+	
+	
+	//Overloaded constructor to intialize firstNam,lastName, email , phoneNumber
+	public Person(String firstName,String lastName,String email,long phoneNumber){
+		
+		this.firstName=firstName;
+		this.lastName=lastName;
+		this.email=email;
+		this.phoneNumber=phoneNumber;
+		
+	}
+	
+	//accessor method to get the  name 
+	public String getFullName() {
+		return firstName +" "+ lastName;
+	}
+	
+	//accessor method to get the email 
+	public String getEmail() {
+		
+		return email;
+	}
+	
+	//accessor method to get the phoneNumber 
+	public long getPhoneNumber() {
+		
+		return phoneNumber;
+	}
+
+}
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+

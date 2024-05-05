@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>100</x>
+      <y>40</y>
+      <w>640</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>Student
+--
+-FirstName :string
+-LastName :string
+-StudentNumber :string
+-GradePointAverage :double
+--
++Student()
++Student(FirstName :string,LastName :String,StudentNumber :string,GradePointAverage :double)
+--
++getFirstName() :String
++getLastName() :String
++getStudentNumber() :String
++getGradePointAverage() :double
+--
++setStudent(FirstName :string,LastName :String,StudentNumber :string,GradePointAverage :double)
+--
+printstudent() :void</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

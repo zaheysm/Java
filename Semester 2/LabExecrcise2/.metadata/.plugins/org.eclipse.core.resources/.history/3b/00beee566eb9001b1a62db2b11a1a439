@@ -1,0 +1,14 @@
+
+public class Employee {
+	
+	private int employeeNumber;
+	private Person emp;
+	
+	public Employee(int employeeNumber,String firstName,String lastName,String email,long phoneNumber) {
+		this.employeeNumber=employeeNumber;
+		this.emp=new Person(firstName,lastName,email,phoneNumber);
+	}
+	
+	
+
+}

@@ -1,0 +1,20 @@
+INDEX VERSION 1.131+C:\CST8116 Homework\LabExecrcise2\Convert\.metadata\.plugins\org.eclipse.jdt.core
+910474654.index
+2360426812.index
+1030253288.index
+2725142083.index
+758508674.index
+1657330681.index
+722609791.index
+1007340512.index
+2820761280.index
+364384390.index
+2642251664.index
+1409915875.index
+4223037866.index
+2768476762.index
+996610041.index
+20904279.index
+3913416559.index
+1259207542.index
+1155634186.index

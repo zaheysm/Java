@@ -1,0 +1,44 @@
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class Server {
+
+	public static void main(String[] args) {
+		
+		ServerSocket service=null;
+		Socket client=null;
+		DataInputStream input=null;
+		//DataOutputStream output=null;
+		DataOutputStream output=null;
+		
+		try {
+			service=new ServerSocket(1254);
+			client=service.accept();
+			input=new DataInputStream(client.getInputStream());
+			output=new DataOutputStream(client.getOutputStream());
+		}catch(IOException e) {
+			System.out.println(e);
+		}
+		try {
+		 while (true) {
+			 String line=input.readLine();
+		 }
+		}catch(IOException e) {
+			System.out.println("failed in reading");
+		}
+		
+		try {
+			output.close();
+			input.close();
+			client.close();
+			service.close();
+		}catch(IOException e) {
+			System.out.println(e);
+		}
+		
+	}
+
+}

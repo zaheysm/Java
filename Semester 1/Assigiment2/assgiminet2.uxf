@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>480</x>
+      <y>100</y>
+      <w>320</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>Milageuseage
+--
+-distance :double
+-fuelefficiency :double
+-fueleperkm=100:int
+--
++Milageuseage()
+--
++getdistance():double
++getfuelefficie():double
+--
++setcar(distance:double,fuelefficiency:double):void
+--
++caculateefficncy():void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

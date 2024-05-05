@@ -1,0 +1,28 @@
+
+public class Employee {
+	
+	private int rank;
+	private String firstName;
+	private String lastName;
+	
+	
+	public Employee(int rank,String firstName,String lastName) {
+		
+		this.rank=rank;
+		this.firstName=firstName;
+		this.lastName=lastName;
+	}
+	
+	
+	public int getRank() {
+		return rank;
+	}
+
+
+	public String getName() {
+		return firstName+" "+lastName;
+	}
+
+	
+
+}

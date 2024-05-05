@@ -1,0 +1,39 @@
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.net.Socket;
+
+public class Clinet {
+
+	
+	public static void main(String[] args) throws IOException {
+		
+		DataInputStream input=null;
+		PrintWriter output=null;
+		Socket clinet=null;
+		try {
+			clinet=new Socket("localhost",1254);
+			output= new PrintWriter(clinet.getOutputStream());
+			input= new DataInputStream(clinet.getInputStream());
+		}catch(IOException e) {
+			System.out.println(e);
+		}
+		while (true) {
+			//output.write("hello server ");
+			//output.write("I am writing to you ");
+			//output.write("can you hear me");
+			//System.out.println(input.read());
+			@SuppressWarnings("deprecation")
+			String message=input.readLine();
+			System.out.println(message);
+			output.close();
+			input.close();
+			clinet.close();
+
+		}
+		
+
+	}
+
+}

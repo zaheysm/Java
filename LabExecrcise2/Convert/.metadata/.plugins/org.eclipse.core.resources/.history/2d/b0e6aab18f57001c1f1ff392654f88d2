@@ -1,0 +1,12 @@
+import java.util.ArrayList;
+
+public class EmployeesList {
+	
+	private Employee [] employeeList;
+	
+	public EmployeesList() {
+		employeeList=new Employee[11];
+	}
+	
+
+}

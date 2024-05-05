@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>30</y>
+      <w>300</w>
+      <h>290</h>
+    </coordinates>
+    <panel_attributes>/::Person/
+--
+-firstName: String
+-lastName: String
+-emailId: String
+-phoneNumber: long
+--
++readInfo(): void
++printInfo(): void
++getFirstName(): String
++setFirstName(String firstName): void
++getLastName(): String
++setLastName(String lastName): void
++getEmailId(): String
++setEmailId(String emailId): void
++getPhoneNumber(): long
++setPhoneNumber(long phoneNumber): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>540</x>
+      <y>170</y>
+      <w>260</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>::Student
+--
+-studenNumber: int
+-programName: String
+-gpa: double
+--
++readInfo(): void
++printInfo(): void
++calculateGpa(double[] marks): double
+-readMarks(): void
++getStudenNumber(): int
++getProgramName(): String
++getGpa(): double
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>590</x>
+      <y>0</y>
+      <w>260</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>::College
+--
+-name: String
+-students[]: Student
+--
++College(String name, int number): ctor
++printTitel(): void
++readStudentsDetails(): void
++printStudentsDetails(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>350</y>
+      <w>180</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>::ParttimeStudent
+--
+-courseFeesTotal: double
+-credits: double
+--
++readInfo(): void
++printInfo(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>580</x>
+      <y>390</y>
+      <w>260</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+::Policies
+--
++MAX_MARKS = 100: int
++MAX_GPA = 4.0: double
+--
++calculateGpa(double marks[]): double
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>750</x>
+      <y>240</y>
+      <w>140</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>::FulltimeStudent
+--
+-tuitionFees: double
+--
++readInfo(): void
++printInfo(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>30</y>
+      <w>180</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>::CollegeSystemTest
+--
+--
++main(String[] args): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

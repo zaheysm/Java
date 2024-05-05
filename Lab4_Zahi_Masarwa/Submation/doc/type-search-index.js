@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"<Unnamed>","l":"DoublyLinkedGeneric"},{"p":"<Unnamed>","l":"DoublyLinkedList"},{"p":"<Unnamed>","l":"Node"},{"p":"<Unnamed>","l":"NodeGeneric"},{"p":"<Unnamed>","l":"TestDLLApp"}]

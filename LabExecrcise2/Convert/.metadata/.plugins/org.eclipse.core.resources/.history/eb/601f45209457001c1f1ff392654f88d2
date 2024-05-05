@@ -1,0 +1,43 @@
+
+import java.util.Arrays;
+
+
+public class EmployeesList<T> {
+	
+	private Employee [] employeeList;
+	private int count=0;
+	public EmployeesList() {
+		employeeList=new Employee[11];
+	}
+	
+	
+	public void addEmloyee(int rank,String fName,String lName) {
+		Employee newEmp=new Employee(rank,fName,lName);
+		employeeList[count]=newEmp;
+		count++;
+	}
+	
+	
+	public void displayList() {
+		System.out.printf("[%s]\t%s\n","Rank","Emloyee Name");
+		for (int i=0;i<employeeList.length;i++) {
+			System.out.printf("%d\t%s\n",employeeList[i].getRank(),employeeList[i].getName());
+		}
+	}
+	
+	
+	
+	public void promate(int rank) {
+		
+		Employee tempemp=new Employee();
+		tempemp=employeeList[rank];
+		employeeList[rank-1]=employeeList[rank];
+		Arrays.sort(employeeList);
+		
+	}
+	
+	
+	
+	
+
+}

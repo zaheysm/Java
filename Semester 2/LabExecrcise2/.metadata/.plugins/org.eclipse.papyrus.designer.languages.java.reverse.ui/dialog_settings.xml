@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="/lab3umldiagram/lab3umldiagram.uml:DISPLAY_MODEL" value="false"/>
+	<item key="/lab3umldiagram/lab3umldiagram.uml:DISPLAY_PACKAGES" value="false"/>
+	<item key="/lab3umldiagram/lab3umldiagram.uml:DISPLAY_CU" value="false"/>
+	<item key="/lab3umldiagram/lab3umldiagram.umlCollegeSystem:projectName" value="CollegeSystem"/>
+	<item key="/lab3umldiagram/lab3umldiagram.umlCollegeSystem:selectedParserIndex" value="0"/>
+	<item key="/CollegeSystem/src/src.uml:DISPLAY_MODEL" value="true"/>
+	<item key="/CollegeSystem/src/src.uml:DISPLAY_PACKAGES" value="true"/>
+	<item key="/CollegeSystem/src/src.uml:DISPLAY_CU" value="true"/>
+	<item key="/CollegeSystem/src/src.umlCollegeSystem:projectName" value="CollegeSystem"/>
+	<item key="/CollegeSystem/src/src.umlCollegeSystem:selectedParserIndex" value="0"/>
+	<list key="/lab3umldiagram/lab3umldiagram.umlCollegeSystem:searchpaths">
+		<item value="java"/>
+		<item value="*"/>
+		<item value="osgi.*"/>
+		<item value="datatype"/>
+	</list>
+	<list key="/lab3umldiagram/lab3umldiagram.umlCollegeSystem:creationpaths">
+		<item value="java.* ; ; java"/>
+		<item value="org.eclipse.papyrus.* ; ; *"/>
+		<item value="org.eclipse.* ; org.eclipse.papyrus.* ; *"/>
+		<item value=" org.osgi.* ; ; osgi.*"/>
+		<item value=" datatype.* ; ; datatype"/>
+	</list>
+	<list key="/CollegeSystem/src/src.umlCollegeSystem:searchpaths">
+		<item value="java"/>
+		<item value="*"/>
+		<item value="osgi.*"/>
+		<item value="datatype"/>
+	</list>
+	<list key="/CollegeSystem/src/src.umlCollegeSystem:creationpaths">
+		<item value="java.* ; ; java"/>
+		<item value="org.eclipse.papyrus.* ; ; *"/>
+		<item value="org.eclipse.* ; org.eclipse.papyrus.* ; *"/>
+		<item value=" org.osgi.* ; ; osgi.*"/>
+		<item value=" datatype.* ; ; datatype"/>
+	</list>
+</section>

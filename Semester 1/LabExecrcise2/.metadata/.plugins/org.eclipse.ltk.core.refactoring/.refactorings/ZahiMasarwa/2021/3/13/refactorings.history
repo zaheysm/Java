@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 3 elements to &apos;Exercise07ZahiMasarwa/src&apos;&#x0D;&#x0A;- Original project: &apos;ZahiMasarwa&apos;&#x0D;&#x0A;- Destination element: &apos;Exercise07ZahiMasarwa/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     User.java&#x0D;&#x0A;     EpsilonPractice.java&#x0D;&#x0A;     EpsilonTester.java&#x0D;&#x0A;- Update references to refactored element" description="Move compilation units" destination="=Exercise07ZahiMasarwa/src" element1="/src&lt;{User.java" element2="/src&lt;{EpsilonPractice.java" element3="/src&lt;{EpsilonTester.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1616436044099" units="3" version="1.0"/>
+</session>

@@ -1,0 +1,29 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+public class TestDataMain {
+
+	public static void main(String[] args) {
+
+		EmployeesList emp=new EmployeesList();
+		String filename = "Employees.csv";		//filename
+		Path file = Paths.get(filename);		//read file path
+		try (BufferedReader input = Files.newBufferedReader(file)) {		//try to read file content
+			String line = null;		//declare empty string
+			String fields[];
+			while ((line = input.readLine()) != null) {		//loop on the file lines
+				fields = line.split(",");
+				emp.addEmloyee(Integer.parseInt( fields[0]), fields[1], fields[2]);
+				
+			}//while
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}
